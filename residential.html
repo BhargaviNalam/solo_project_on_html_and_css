@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Residential Hotel Interior Models</title>
+    <link rel="icon" href="residentialicon.jpg">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .banner {
+            height: 100vh;
+            background-image: url('residentialbackground.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            /* background: linear-gradient(to right, black, rgb(245, 243, 243)); */
+        }
+
+        /* .banner img{
+            filter: brightness(50%);
+        } */
+
+        .navbar {
+            position: absolute;
+            top: 8%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 1200px;
+            height: 40px;
+            padding: 10px 0;
+            background-color: #fff;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .nav-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .navlogo {
+            display: flex;
+            align-items: center;
+        }
+
+        .navlogo img {
+            margin: 10px 10px 10px 10px;
+            width: 50px;
+            height: 40px;
+        }
+
+        .navlogo h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .navbar .nav-right {
+            margin-right: 30px;
+        }
+
+        .nav-right a {
+            font-size: 18px;
+            margin-left: 30px;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+        .nav-right img {
+            transition: 1s ease;
+
+        }
+
+        .nav-right a:hover {
+            color: #007BFF;
+        }
+
+        .next {
+            display: flex;
+            margin: 0px 10px;
+        }
+
+        .next .a {
+            border: 1px solid black;
+            padding: 5px 20px 5px 15px;
+            margin: 250px 60px 0px 150px;
+            align-items: center;
+            background-color: #fff;
+            width: 550px;
+            height: 230px;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+            line-height: 1.6;
+            font-weight: 100px;
+        }
+
+        .next .b {
+            border: 1px solid black;
+            padding: 5px 15px 5px 15px;
+            margin: 250px 100px 0px 0px;
+            align-items: center;
+            background-color: #fff;
+            width: 550px;
+            height: 230px;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .text h2 {
+            padding: 200px 500px;
+            color: #fff;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+        }
+
+        .text h4 {
+            margin: -200px 0px 0px 20px;
+            padding: 0px 300px;
+            color: #fff;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            line-height: 1.5;
+        }
+
+        .para {
+            margin: 10px 0px;
+            color: #030303;
+            /* border: 2px solid black; */
+            margin: 10px 25px;
+            /* background-color: gainsboro; */
+        }
+
+        .para .para1 {
+            display: flex;
+            padding: 15px 10px 0px 20px;
+        }
+
+        .para .para1 p {
+            line-height: 2.0;
+            word-spacing: 6px;
+            padding: 35px 10px 0px 10px;
+            color: #030303;
+        }
+
+        .para .para2 p {
+            line-height: 2.0;
+            word-spacing: 6px;
+            padding: 45px 0px 0px 10px;
+            color: #030303;
+        }
+
+        .para .para1 img {
+            border-radius: 20px;
+            border: 2px solid black;
+            transition: 1s ease;
+
+        }
+
+        .para .para1 img:hover {
+            transform: scale(1.1);
+        }
+
+        .para1 .p1 h2 {
+            padding: 10px 0px;
+            text-align: center;
+            font-family: 'Times New Roman',
+                Times,
+                serif;
+            font-weight: bold;
+            font-size: 20px;
+            color: #030303;
+        }
+
+        .para .para2 {
+            display: flex;
+            padding: 15px 20px 0px 10px;
+        }
+
+        .para .para2 img {
+            border-radius: 20px;
+            border: 2px solid black;
+            transition: 1s ease;
+
+        }
+
+        .para .para2 img:hover {
+            transform: scale(1.1);
+        }
+
+        .para2 .p2 h2 {
+            padding: 10px 0px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 20px;
+            color: #030303;
+        }
+
+        .para .para1 p {
+            padding: 10px 20px;
+            line-height: 2.0;
+            color: #222;
+        }
+
+        .para .para2 p {
+            padding: 10px 20px;
+            line-height: 2.0;
+            color: #222;
+        }
+
+        .head {
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 10px 500px;
+        }
+
+        .head h2 {
+            color: #333;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        .down {
+            display: flex;
+            padding: 15px 15px;
+        }
+
+        .down .d img {
+            width: 400px;
+            height: 300px;
+
+        }
+
+        .down .d {
+            padding: 15px 15px;
+            /* transition: 1s ease; */
+            margin: 5px 10px;
+            box-shadow: 0.5px 0.5px 5px #3f3737;
+        }
+
+        /* .down .d:hover {
+            transform: scale(1.1);
+        } */
+
+        .down .d h1 {
+            font-weight: 400;
+            font-size: 30px;
+        }
+
+        .down .d p {
+            font-style: italic;
+            line-height: 1.8;
+            word-spacing: 7px;
+            font-size: 15px;
+        }
+
+        .down .d button {
+            width: 400px;
+            height: 50px;
+            background-color: rgb(238, 238, 122);
+        }
+
+        .down .d button:hover {
+            background-color: rgb(192, 192, 70);
+        }
+        .mid h1{
+            font-weight: 200;
+            padding: 25px 15px 10px 15px;
+        }
+        .mid p{
+            font-size: 16px;
+            padding: 0px 80px 15px 80px;
+            line-height: 1.8;
+            word-spacing: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <div class="nav-left">
+                <div class="navlogo">
+                    <img src="residentiallogo.png" width="30px" height="30px" alt="Logo">
+                    <h1>Residential Hotel Designs</h1>
+                </div>
+            </div>
+            <div class="nav-right">
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">AboutUs</a>
+                <a href="contactus.html">ContactUs</a>
+            </div>
+        </div>
+        <div class="text">
+            <h2>"Experience Luxury Redefined"</h2>
+            <h4>Our interior design reflects a harmonious blend of luxury and comfort, creating an inviting
+                atmosphere that encourages relaxation and rejuvenation.</h4>
+        </div>
+        <div class="next">
+
+            <div class="a">
+                <center>
+                    <h2>Our Quality!</h2>
+                </center>
+                <h4>we are dedicated to providing an exceptional guest experience. From personalized
+                    check-in to elegantly designed rooms with modern amenities, we ensure your comfort throughout your
+                    stay. enjoy 24/7 room service featuring diverse dining options.</h4>
+            </div>
+            <div class="b">
+                <center>
+                    <h2>Our Services!</h2>
+                </center>
+                <h4>we pride ourselves on delivering the highest quality in every aspect of our
+                    services. Our commitment is reflected in our meticulously designed interiors, detail in every room.
+                    We prioritize guest satisfaction by providing service tailored to your needs. </h4>
+            </div>
+
+        </div>
+        <div class="mid">
+           <center><h1>What we do?</h1></center>
+            <p>We delivers an interior design that speaks to your unique vision. We strive to create comfortable luxury
+                homes for our clients, with careful attention to every aspect of construction. We’ve been in the
+                industry for a while now and have extensive experience designing several high-end spaces. We work
+                closely with the clients to eliminate the margin of error in their vision and our output.</p>
+        </div>
+        <div class="down">
+            <div class="d">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2024/2/390426224/IC/MB/WQ/195977755/turnkey1.jpg" alt="">
+                <center>
+                    <h1>Plug-And-Play</h1>
+                </center>
+                <p>A turnkey interior refers to a complete, ready-to-use interior design and furnishing solution
+                    provided by an interior design company or contractor. from initial design and planning to execution
+                    and finishing</p>
+                <a href="turnkey.html"><button>Turnkey design</button></a>
+            </div>
+            <div class="d">
+                <img src="https://m.media-amazon.com/images/I/51M25DbEX6L.jpg" alt="">
+                <center>
+                    <h1>Custom Furniture</h1>
+                </center>
+                <p>Custom furniture refers to furniture that is specifically designed, crafted, and tailored to meet the
+                    unique preferences, requirements, and needs of an individual or space. </p>
+                <a href="custom.html"><button>Custom design</button></a>
+            </div>
+            <div class="d">
+                <img src="https://media.architecturaldigest.com/photos/60a25f26327340b3463abb3c/master/w_1600%2Cc_limit/Lobby_Radisson%2520Collection%2520Royal%2520Hotel%2C%2520Copenhagen.%2520Photo%2520Rickard%2520L.%2520Eriksson.jpg"
+                    alt="">
+                <center>
+                    <h1>Top Designs</h1>
+                </center>
+                <p>exceptional interior design typically focuses on enhancing the quality of life, reflecting personal
+                    style, space efficiency.to create spaces that are both visually appealing and practical.</p>
+                <a href="top.html"><button>Top design</button></a>
+            </div>
+        </div>
+        <!-- <div class="head">
+            <h2>Our Stay Places</h2>
+        </div>
+        <div class="para">
+            <div class="para1">
+                <div class="p1">
+                    <img src="hotel1.jpeg" alt="" width="350px" height="250px">
+                    <h2 style="color: #222;">Bedroom</h2>
+                </div>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;<i>" At our hotel, the bedroom interior design is crafted to create a perfect
+                        blend of comfort and elegance. Each room is a serene retreat, featuring luxurious furnishings
+                        and soothing color palettes that promote relaxation. Plush bedding, complemented by high-quality
+                        linens, invites restful sleep, while carefully selected decor elements add a touch of
+                        sophistication.  "</i> </p>
+            </div>
+            <div class="para2" style="color: #030303;">
+                <p><i>"In our hotel, the balcony interior design is thoughtfully curated to extend the comfort of the
+                        indoors into a serene outdoor retreat. Each balcony is adorned with stylish furnishings,
+                        including comfortable seating options and elegant tables, creating an inviting space for guests
+                        to relax and enjoy the view. Lush greenery and carefully chosen plants enhance the natural
+                        ambiance, fostering a sense of tranquility.
+                    </i>
+                </p>
+                <div class="p2">
+                    <img src="hotel2.jpeg" alt="" width="350px" height="250px">
+                    <h2>Balcony</h2>
+                </div>
+            </div>
+            <div class="para1">
+                <div class="p1">
+                    <img src="hotel3.jpeg" alt="" width="350px" height="250px">
+                    <h2 style="color: #222;">Bathroom</h2>
+                </div>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;<i>" In our hotel, the bathroom interior design is a sanctuary of luxury and
+                        relaxation, meticulously crafted to provide an exquisite experience for our guests. Each
+                        bathroom features high-end fixtures and modern amenities, including spacious walk-in showers and
+                        elegant soaking tubs, creating a spa-like atmosphere. The use of natural materials, such as
+                        marble or granite, adds sophistication and timeless beauty. while ambient lighting enhances the
+                        serene ambiance. "</i> </p>
+            </div>
+            <div class="para2" style="color: #030303;">
+                <p><i>" In our hotel, the garden interior design is an enchanting blend of nature and tranquility,
+                        thoughtfully created to provide a serene outdoor escape for our guests. Lush greenery, vibrant
+                        flowers, and carefully placed trees create a vibrant, inviting atmosphere that encourages
+                        relaxation and contemplation. " </i>
+                </p>
+                <div class="p2">
+                    <img src="hotel4.jpeg" alt="" width="350px" height="250px">
+                    <h2>Garden</h2>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    </div>
+</body>
+
+</html>

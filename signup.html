@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .main {
+            height: 100%;
+            width: 100%;
+            background-image: url("regback.jpeg");
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+        }
+
+        .form-box {
+            width: 400px;
+            height: 550px;
+            position: relative;
+            background: #fff;
+            padding: 5px;
+            overflow: hidden;
+            border-radius: 50px;
+            margin: 35px 600px ;
+
+        }
+
+        .button-box {
+            width: 220px;
+            margin: 35px auto;
+            position: relative;
+            box-shadow: 0 0 20px 9px #07afe81f;
+            border-radius: 30px;
+        }
+
+        .logReg {
+            padding: 10px 30px 0px 90px;
+            color: #fff;
+            cursor: pointer;
+            background: transparent;
+            border: 0;
+            outline: none;
+            position: relative;
+        }
+
+        #btn {
+            top: 0;
+            left: 0;
+            position: absolute;
+            justify-content: center;
+            width: 130px;
+            height: 40px;
+            margin: 0px 50px;
+            background: linear-gradient(to right, #03637b, #84e0e7);
+            border-radius: 30px;
+            transition: 0.5s;
+        }
+
+        .social-icons {
+            margin: 30px auto;
+            text-align: center;
+        }
+
+        .social-icons img {
+            width: 40px;
+            margin: 0 12px;
+            box-shadow: 0 0 20px 0 #7f7f7f3d;
+            cursor: pointer;
+            border-radius: 60%;
+        }
+
+        .input-group {
+            top: 180px;
+            position: absolute;
+            width: 280px;
+            transition: 0.5s;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px 0;
+            margin: 5px 0;
+            border-left: 0;
+            border-top: 0;
+            border-right: 0;
+            border-bottom: 1px solid #999;
+            outline: none;
+            background: transparent;
+        }
+
+        .submit-btn {
+            width: 85%;
+            height: 35px;
+            padding: 10px 30px;
+            cursor: pointer;
+            display: block;
+            margin: 0px 10px;
+            background: linear-gradient(to right, #03637b, #84e0e7);
+            border: 0;
+            outline: none;
+            border-radius: 30px;
+            color: #fff;
+        }
+
+        .check-box {
+            margin: 30px 10px 30px 0;
+        }
+
+        span {
+            color: #777;
+            font-size: 12px;
+            bottom: 68px;
+            position: absolute;
+            padding: 10px 0px 30px 0px;
+        }
+
+        #login {
+            left: 80px;
+        }
+        .form{
+            justify-items: center;
+        }
+        .home{
+          margin: 20px 100px;  
+          padding: 20px 0px 0px 0px;
+        }
+        .blogin{
+            margin: 0px 0px 0px 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <h4 class="logReg" id="log">Register</h4>
+            </div>
+            <div class="social-icons">
+                <img src="FaceBook.png" alt="">
+                <img src="Twitter.png" alt="">
+                <img src="Google.png" alt="" width="130px" >
+            </div>
+            <div class="form">
+                <form id="login" class="input-group">
+                    <input type="text" class="input-field" placeholder="User Id" required>
+                    <input type="address" class="input-field" placeholder="Address" required>
+                    <input type="email" class="input-field" placeholder="Email" required>
+                    <input type="password" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-box"><span>Remember Password</span>
+                    <button type="submit" class="submit-btn" id="blogin" style="font-size: 18px;">Sign Up</button>
+                    <br><a href="index.html" style="text-decoration: none; font-size: small;" class="home" >Home</a> 
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

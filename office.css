@@ -1,0 +1,96 @@
+.a img{
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 600px;
+    
+}
+.shade{
+    filter: brightness(70%);
+}
+.a nav{
+    color: #222;
+}
+.d{
+    display: flex;
+    justify-content: space-between;
+}
+.b{
+    text-align: right;
+}
+.a .d .c h1{
+        color: rgb(247, 245, 243);
+        text-shadow: 1px 1px 2px black, 0 0 25px rgb(172, 130, 41), 0 0 5px darkblue;
+}
+.c img{
+    width: 180px;    
+    height: 90px;
+}
+.c h1{
+    
+}
+.c{
+    display: flex;
+    
+ }
+ .e{
+    display: flex;
+    padding: 0px 40px;
+    margin: 10px 0px 10px 230px;
+ }
+ .f{
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    width: 380px;
+    height: 150px;
+    background-color: rgb(197, 193, 187);
+    color: #222;
+    padding: 0px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200px;
+    line-height: 1.5;
+    }
+ .g{
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    width: 380px;
+    height: 150px;
+    background-color: rgb(197, 193, 187);
+    color: #222;
+    padding: 0px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+ }
+.a .h h2{
+    color: #222;
+ }
+  .poster{
+    margin:1% 4% ;
+    border-radius: 2%;
+    width: 400px;
+    height: 250px;
+    border: 3px solid whitesmoke;
+    box-sizing: border-box;
+    margin-right: 15px; 
+}
+.j{
+    padding-right: 50px;
+    font-size: 16px;
+    margin: 10px 0px 0px 0px;
+    padding: 0;
+}
+#i{
+    float: left;
+}
+.i{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #222;
+    padding: 10px 0px;
+    line-height: 2.0;
+    padding: 20px 10px 0px 10px ;
+}
